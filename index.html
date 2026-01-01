@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amka | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Amka<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <button class="dropdown-btn" id="menuBtn">More <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-menu" id="dropdown">
+                        <a href="#hobbies">Hobbies</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <img src="images/hero.jpg" alt="Amka" class="profile-img">
+        <h1>Hello, I'm <span>Amka</span></h1>
+        <p>Civil Engineer <i class="fas fa-hard-hat"></i> · Basketball Lover <i class="fas fa-basketball-ball"></i> ·
+            Nature Explorer <i class="fas fa-mountain"></i></p>
+        <a href="#hobbies" class="btn">Explore My Life</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                I am a dedicated Civil Engineer and Engineering Project Manager with a strong academic foundation and
+                over a decade of professional evolution. My journey began at the <b>Chemistry Lyceum of Laboratory
+                    School No. 1</b>
+                in Ulaanbaatar (Class of 2003), followed by a Bachelor’s degree from the <b>MUST</b> in 2011.
+                In 2021, I earned my Master’s degree from <b>Beijing Jiaotong University</b>.
+            </p>
+            <p class="quote">
+                "I’m a civil engineer who enjoys building both structures and experiences.
+                Sports, nature, and creativity are an important part of my life.
+                I believe in balancing professional precision with personal passion."
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <span class="date">2019 - 2021</span>
+                    <h3>Master of Engineering</h3>
+                    <p>Beijing Jiaotong University (China)</p>
+                    <small>Project Management Specialty</small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <span class="date">2007 - 2011</span>
+                    <h3>Bachelor of Engineering</h3>
+                    <p>MUST (ШУТИС)</p>
+                    <small>Civil Engineering</small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <span class="date">1993 - 2003</span>
+                    <h3>High School Diploma</h3>
+                    <p>Laboratory School No. 1</p>
+                    <small>Chemistry Lyceum</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2><i class="fas fa-tools"></i> Technical & Coding Expertise</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="skill-title"><i class="fas fa-hard-hat"></i> Civil Engineering</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle"></i> AutoCAD & Structural Design</li>
+                        <li><i class="fas fa-check-circle"></i> Project Management & Planning</li>
+                        <li><i class="fas fa-check-circle"></i> Site Supervision & QC</li>
+                        <li><i class="fas fa-check-circle"></i> SAP2000 & Analysis</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="skill-title"><i class="fas fa-code"></i> Frontend Development</h3>
+                    <ul class="skill-list">
+                        <li><i class="fab fa-html5"></i> HTML5 & Semantic Web</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3 & Modern Layouts</li>
+                        <li><i class="fab fa-js"></i> JavaScript (ES6+)</li>
+                        <li><i class="fab fa-react"></i> React.js Library</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="skill-title"><i class="fas fa-server"></i> Backend & Standards</h3>
+                    <ul class="skill-list">
+                        <li><i class="fab fa-node-js"></i> Node.js Runtime</li>
+                        <li><i class="fas fa-database"></i> RESTful APIs</li>
+                        <li><i class="fas fa-globe"></i> International Standards</li>
+                        <li><i class="fas fa-file-invoice-dollar"></i> Quantity & Budgeting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=500&q=80"
+                    alt="Basketball" class="card-img">
+                <div class="card-content">
+                    <i class="fas fa-basketball-ball hobby-icon"></i>
+                    <h3>Basketball</h3>
+                    <p>Playing basketball since high school. It’s my way of staying fit and competitive.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=500&q=80"
+                    alt="Nature" class="card-img">
+                <div class="card-content">
+                    <i class="fas fa-campground hobby-icon"></i>
+                    <h3>Nature Travel</h3>
+                    <p>Hiking and exploring new landscapes helps me clear my mind.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=500&q=80"
+                    alt="Singing" class="card-img">
+                <div class="card-content">
+                    <i class="fas fa-microphone-alt hobby-icon"></i>
+                    <h3>Music & Singing</h3>
+                    <p>Music is my creative outlet. I enjoy singing and discovering new genres.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="hero-btns">
+        <a href="#hobbies" class="btn">Explore My Life</a>
+        <a href="Amka_CV.pdf" download class="btn outline-btn">
+            <i class="fas fa-download"></i> Download My CV (PDF)
+        </a>
+    </div>
+    </section>
+
+    <section id="contact">
+    <h2>Get In Touch</h2>
+    <div class="contact-box">
+        <div class="contact-icons-wrapper">
+            <div class="contact-item">
+                <i class="fas fa-envelope-open-text contact-icon"></i>
+                <p>Collaborations & General Inquiry</p>
+                <a href="mailto:amkaamarsaikhan@gmail.com">amkaamarsaikhan@gmail.com</a>
+            </div>
+
+            <div class="contact-item">
+                <i class="fab fa-github contact-icon"></i>
+                <p>Check out my Code & Repositories</p>
+                <a href="https://github.com/amkaamarsaikhan" target="_blank">github.com/AMKA</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer>
+        © 2026 Amka. Built with <i class="fas fa-heart"></i>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

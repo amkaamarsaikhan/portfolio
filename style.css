@@ -1,0 +1,320 @@
+/* --- GLOBAL SETTINGS --- */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: oklch(14% 0.02 160);
+    color: oklch(92% 0.02 140);
+    line-height: 1.6;
+}
+
+/* --- NAVIGATION --- */
+header {
+    position: sticky;
+    top: 0;
+    background: oklch(14% 0.02 160 / 95%);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    border-bottom: 1px solid oklch(82% 0.15 145 / 15%);
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 24px;
+    color: oklch(82% 0.15 145);
+}
+
+.logo span {
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: oklch(92% 0.02 140);
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: oklch(82% 0.15 145);
+}
+
+/* --- DROPDOWN --- */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    color: oklch(92% 0.02 140);
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.dropdown-btn i {
+    font-size: 10px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: oklch(20% 0.03 155);
+    border-radius: 8px;
+    padding: 10px 0;
+    min-width: 160px;
+    display: none;
+    box-shadow: 0 10px 30px oklch(0% 0 0 / 50%);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: oklch(92% 0.02 140);
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background: oklch(28% 0.05 155);
+}
+
+/* --- HERO --- */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background: radial-gradient(circle at center, oklch(82% 0.15 145 / 5%) 0%, transparent 70%);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid oklch(82% 0.15 145);
+    margin-bottom: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 25px oklch(82% 0.15 145 / 20%);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: oklch(82% 0.15 145);
+}
+
+.hero p {
+    opacity: 0.85;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+
+.btn {
+    padding: 12px 32px;
+    border-radius: 30px;
+    background: oklch(82% 0.15 145);
+    color: oklch(14% 0.02 160);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: oklch(88% 0.18 140);
+    transform: scale(1.05);
+}
+
+/* --- SECTIONS --- */
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+    color: oklch(82% 0.15 145);
+    text-align: center;
+}
+
+/* About Section Specifics */
+.about-content {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-content .quote {
+    font-style: italic;
+    color: oklch(82% 0.15 145);
+    margin-top: 20px;
+}
+
+/* --- GRID & CARDS --- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: oklch(20% 0.03 155);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 1px solid oklch(82% 0.15 145 / 10%);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: oklch(82% 0.15 145 / 30%);
+    box-shadow: 0 20px 40px oklch(0% 0 0 / 40%);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content .date {
+    color: oklch(82% 0.15 145);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.hobby-icon {
+    font-size: 24px;
+    color: oklch(82% 0.15 145);
+    margin-bottom: 15px;
+}
+
+/* --- SKILL LISTS --- */
+.skill-title {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: oklch(82% 0.15 145);
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-list i {
+    color: oklch(82% 0.15 145);
+}
+
+/* --- CONTACT --- */
+.contact-box {
+    background: oklch(20% 0.03 155);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid oklch(82% 0.15 145 / 15%);
+}
+
+.contact-icon {
+    font-size: 40px;
+    color: oklch(82% 0.15 145);
+    margin-bottom: 20px;
+}
+
+.contact-box a {
+    color: oklch(82% 0.15 145);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 14px;
+    opacity: 0.6;
+    border-top: 1px solid oklch(82% 0.15 145 / 10%);
+}
+
+footer i {
+    color: #ef4444;
+}
+/* Hero товчлууруудыг зэрэгцүүлэх */
+.hero-btns {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Outline (хүрээтэй) товчлуур */
+.outline-btn {
+    background: transparent !important;
+    border: 2px solid oklch(82% 0.15 145);
+    color: oklch(82% 0.15 145) !important;
+}
+
+.outline-btn:hover {
+    background: oklch(82% 0.15 145 / 10%) !important;
+    transform: translateY(-3px);
+}
+
+/* Навигацийн жижиг CV товчлуур */
+.cv-btn-small {
+    background: oklch(82% 0.15 145 / 10%);
+    padding: 5px 12px;
+    border-radius: 8px;
+    border: 1px solid oklch(82% 0.15 145 / 30%);
+    font-weight: 600;
+}
+
+.cv-btn-small:hover {
+    background: oklch(82% 0.15 145);
+    color: oklch(14% 0.02 160) !important;
+}

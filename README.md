@@ -5,7 +5,7 @@ Welcome to my personal portfolio repository! This project showcases my journey a
 
 
 ## 👤 About Me
-- **Name:** Amka (Amarsaikhan)
+- **Name:** Amka (Amarjargal)
 - **Education:** - 🎓 **M.Eng in Project Management** - Beijing Jiaotong University (2021)
   - 🎓 **B.Eng in Civil Engineering** - MUST (2011)
   - 🎓 **Chemistry Lyceum** - Laboratory School No. 1 (2003)
